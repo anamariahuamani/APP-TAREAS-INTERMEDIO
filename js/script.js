@@ -21,7 +21,7 @@ let  agregarTarea = () => {
                 <input type="checkbox">
                 ${tarea}
             </label>
-            <img src="./assets/trash.png" alt="eliminar" class="btnEliminar">
+            <img src="./assets/image.png" alt="eliminar" class="btnEliminar">
         </div>
     `;
     input.value = "";
