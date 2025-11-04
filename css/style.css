@@ -1,19 +1,19 @@
 :root{
     --orange: #d95550;
-    --lightorange: #dd6662;
-    --verylighorange: #f89e8b;
-    --gray: #55557b;
-    --blanquito: #fff;
+    --lightOrange:#dd6662;
+    --veryLightOrange: #f89e8b;
+    --gray:#55557b;
+    --white:#fff;
 }
 *{
     margin: 0;
-    padding: 0,
+    padding: 0;
 }
 body{
-    font-family: 'lucida sans','lucida sans regular','lucida grande','lucida sans unicado','genova'
-    ,'verdana';
-    background-color: var(--naranja);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--orange);
 }
+
 .logo{
     width: 300px;
     position: absolute;
@@ -21,8 +21,8 @@ body{
     right: 30px;
 }
 h1{
-    margin-top: 180px;
-    color: var(--blanquito);
+    margin-top: 200px;
+    color: var(--white);
     text-align: center;
 }
 form{
@@ -32,17 +32,14 @@ form{
     text-align: center;
 }
 form input[type="text"]{
-    background-color: var(--naranja);
-    color: var(--blanquito);
+    background-color: var(--orange);
     border-style: none;
     font-size: 1.5rem;
 }
-form input[type="text"]
-::placeholder{
-    color: var(--naranjaclaro);
+form input[type="text"]::placeholder{
+    color: var(--lightOrange);
 }
-form input[type="text"]
-:focus{
+form input[type="text"]:focus{
     outline: none;
 }
 form input[type="submit"]{
@@ -51,47 +48,43 @@ form input[type="submit"]{
     height: 40px;
     border-radius: 50%;
     border-style: none;
-    color: var(--naranja);
+    color: var(--orange);
 }
 form input[type="submit"]
 :hover{
-    background-color: var(--naranjaclaro);
+    background-color:  var(--lightOrange);
     cursor: pointer;
-    color: var(--blanquito);
+    color: var(--white);
 }
 .contenedor-lista{
     width: 400px;
     margin: 0 auto;
 }
 .contenedor-tarea{
-    background-color: var(--blanquito);
-    display: flex;
-    justify-content:space-between ;
-    margin-bottom: 6px;
-    padding: 16px;
-    border-radius: 4px;
-    font-size: 1.1em;
-    font-weight: 500;
-    color: var(--gris);
-
+background-color: var(--white); 
+display: flex;
+justify-content: space-between;
+margin-bottom: 6px;
+padding: 16px;
+border-radius: 4px;
+font-size: 1.1em;
+font-weight: 500;
+color: var(--gray);
 }
-.btneliminar{
+.btnEliminar{
     width: 15px;
     height: 15px;
-
 }
-.btneliminar:hover{
+.btnEliminar:hover{
     cursor: pointer;
     width: 35px;
-    height: 25px;
-    
+    height: 35px;
+    transition: all 0.2s;
 }
 #stats{
     margin-top: 25px;
     font-size: 1.3em;
-    color: var(--lightorange);
+    color: var
+    (--lightOrange);
     text-align: center;
 }
-
-
-
